@@ -14,8 +14,8 @@ struct Question {
        [
         Question(
                 title: "What food do you prefer?",
-                 type: .single,
-                 answer: [
+                type: .single,
+                answer: [
                     Answer(title: "Steak", type: .dog),
                     Answer(title: "Fish", type: .cat),
                     Answer(title: "Carrot", type: .rabbit),
@@ -24,8 +24,8 @@ struct Question {
        ),
         Question(
                 title: "What do you like more?",
-                 type: .multiple,
-                 answer: [
+                type: .multiple,
+                answer: [
                     Answer(title: "To swim", type: .dog),
                     Answer(title: "Sleep", type: .cat),
                     Answer(title: "To cuddle", type: .rabbit),
@@ -33,8 +33,8 @@ struct Question {
                  ]
         ),
         Question(title: "Do you like drive trips?",
-                 type: .ranged,
-                 answer: [
+                type: .ranged,
+                answer: [
                     Answer(title: "Hate", type: .cat),
                     Answer(title: "Nervous", type: .rabbit),
                     Answer(title: "Do not notice", type: .turtle),
@@ -77,3 +77,4 @@ enum AnimalType: Character {
         }
     }
 }
+
