@@ -42,6 +42,11 @@ class QuestionViewController: UIViewController {
         setupUI()
     }
   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultViewController else { return }
+        resultVC.result = answersChoosen
+    }
+    
     
     @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
         guard let buttonIndex = singleButtons.firstIndex(of: sender) else  { return }
@@ -137,7 +142,6 @@ extension QuestionViewController {
         } else {
             performSegue(withIdentifier: "showResult" , sender: nil)
         }
-        
         
     }
 }
