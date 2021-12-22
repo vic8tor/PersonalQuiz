@@ -9,7 +9,7 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var resultAnswerLabel: UILabel!
     @IBOutlet weak var resultDefenitionLabel: UILabel!
     var result: [Answer]!
     
@@ -33,11 +33,12 @@ extension ResultViewController {
             responseAnswer[$0, default: 0] += 1
         }
         let greatestNumberAnswer = responseAnswer.max{ $0.value < $1.value }
-        guard let result = greatestNumberAnswer?.key.rawValue else { return }
+        
+        guard let resultAnswer = greatestNumberAnswer?.key.rawValue else { return }
         guard let defenition = greatestNumberAnswer?.key.defenition else { return }
         
         resultDefenitionLabel.text = defenition
-        resultLabel.text = "You are - \(result)"
+        resultAnswerLabel.text = "You are - \(resultAnswer)!"
         
     }
 }
