@@ -39,7 +39,9 @@ class QuestionViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        setGradient()
         setupUI()
+        
     }
   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -143,6 +145,15 @@ extension QuestionViewController {
             performSegue(withIdentifier: "showResult" , sender: nil)
         }
         
+    }
+    private func setGradient() {
+        let gradient = CAGradientLayer()
+        gradient.frame = view.bounds
+        gradient.colors = [
+            UIColor.systemFill.cgColor,
+            UIColor.systemMint.cgColor
+        ]
+        view.layer.insertSublayer(gradient, at: 0)
     }
 }
 

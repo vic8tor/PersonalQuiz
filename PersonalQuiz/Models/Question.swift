@@ -13,32 +13,32 @@ struct Question {
     static func getQuestions() -> [Question] {
        [
         Question(
-                title: "What food do you prefer?",
+                title: "Which food do you like the most?",
                 type: .single,
                 answer: [
-                    Answer(title: "Steak", type: .dog),
-                    Answer(title: "Fish", type: .cat),
-                    Answer(title: "Carrot", type: .rabbit),
-                    Answer(title: "Corn", type: .turtle)
+                    Answer(title: "Steak 🥩", type: .dog),
+                    Answer(title: "Fish 🐟", type: .cat),
+                    Answer(title: "Carrots 🥕", type: .rabbit),
+                    Answer(title: "Corn 🌽", type: .turtle)
                  ]
        ),
         Question(
-                title: "What do you like more?",
+                title: "Which activities do you enjoy?",
                 type: .multiple,
                 answer: [
-                    Answer(title: "To swim", type: .dog),
-                    Answer(title: "Sleep", type: .cat),
-                    Answer(title: "To cuddle", type: .rabbit),
-                    Answer(title: "To eat", type: .turtle)
+                    Answer(title: "Swimming 🏊", type: .dog),
+                    Answer(title: "Sleeping 😴", type: .cat),
+                    Answer(title: "Cuddling 🤗", type: .rabbit),
+                    Answer(title: "Eating 🥘", type: .turtle)
                  ]
         ),
-        Question(title: "Do you like drive trips?",
+        Question(title: "How much do you enjoy car rides?",
                 type: .ranged,
                 answer: [
-                    Answer(title: "Hate", type: .cat),
-                    Answer(title: "Nervous", type: .rabbit),
-                    Answer(title: "Do not notice", type: .turtle),
-                    Answer(title: "Adore", type: .dog)
+                    Answer(title: "I dislike them 😵", type: .cat),
+                    Answer(title: "I get a little nervous 😰", type: .rabbit),
+                    Answer(title: "I barely notice them😕 ", type: .turtle),
+                    Answer(title: "I love them 🤩", type: .dog)
                  ]
             )
        ]

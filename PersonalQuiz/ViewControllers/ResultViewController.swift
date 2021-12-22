@@ -15,6 +15,7 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setGradient()
         
     defineWhichYouAnimal()
         
@@ -40,5 +41,19 @@ extension ResultViewController {
         resultDefenitionLabel.text = defenition
         resultAnswerLabel.text = "You are - \(resultAnswer)!"
         
+    }
+    
+}
+
+extension ResultViewController {
+    private func setGradient() {
+        let gradient = CAGradientLayer()
+        gradient.frame = view.bounds
+        gradient.colors = [
+            UIColor.systemYellow.cgColor,
+            UIColor.systemGreen.cgColor,
+            UIColor.systemGray.cgColor
+        ]
+        view.layer.insertSublayer(gradient, at: 0)
     }
 }
