@@ -68,7 +68,7 @@ enum AnimalType: Character {
            return "You like being with friends, you surround yourself" +
             "with pople you like and are always ready to help"
         case .cat:
-            return "You are on your mind. Love to walk on your own. You value loneliness"
+            return "Mischievous, yet mild-tempered, you enjoy doing things on your own terms"
         case .rabbit:
             return "You like everything soft. You are healthy and full of energy"
         case .turtle:
@@ -77,4 +77,3 @@ enum AnimalType: Character {
         }
     }
 }
-
